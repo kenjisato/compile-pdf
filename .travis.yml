@@ -1,6 +1,7 @@
 language: r
 pandoc_version: 1.17.2
 dist: trusty
+cache: packages
 
 branches:
   only:
@@ -15,4 +16,4 @@ addons:
 before_script:
   - tlmgr install luatexja
 script:
-  - lualatex --output-directory=doc test.tex
+  - lualatex --version
