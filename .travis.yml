@@ -13,6 +13,6 @@ addons:
     - texlive-luatex
 
 before_script:
-  - tlmgr update --self --all
+  - tlmgr install luatexja
 script:
-  - lualatex --output-directory=doc test.tex
+  - lualatex --version
