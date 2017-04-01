@@ -11,7 +11,8 @@ addons:
     packages:
     - fonts-ipaexfont
     - texlive-luatex
-    - texlive-lang-japanese
 
+before_script:
+  - tlmgr update --self --all
 script:
   - lualatex --output-directory=doc test.tex
