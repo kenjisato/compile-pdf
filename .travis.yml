@@ -1,0 +1,16 @@
+language: r
+pandoc_version: 1.17.2
+dist: trusty
+
+branches:
+  only:
+    - master
+
+addons:
+  apt:
+    packages:
+    - fonts-ipaexfont
+    - texlive-luatex
+
+script:
+  - lualatex --output-directory=doc test.tex
