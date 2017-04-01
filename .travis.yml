@@ -11,9 +11,11 @@ addons:
   apt:
     packages:
     - fonts-ipaexfont
+    - texlive-lang-cjk，
+    - texlive-xetex
     - texlive-luatex
 
 before_script:
   - tlmgr install luatexja
 script:
-  - lualatex --version
+  - lualatex test.tex
