@@ -15,4 +15,4 @@ addons:
 before_script:
   - tlmgr install luatexja
 script:
-  - lualatex --version
+  - lualatex --output-directory=doc test.tex
