@@ -11,6 +11,7 @@ addons:
     packages:
     - fonts-ipaexfont
     - texlive-luatex
+    - texlive-lang-japanese
 
 script:
   - lualatex --output-directory=doc test.tex
