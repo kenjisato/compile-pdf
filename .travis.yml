@@ -5,8 +5,9 @@ cache: packages
 
 addons:
   apt:
+    source:
+    - texlive-lang-japanese
     packages:
-    - texlive-lang-japanese，
     - texlive-luatex
 
 before_script:
