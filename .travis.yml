@@ -1,18 +1,12 @@
 language: r
 pandoc_version: 1.17.2
-dist: trusty
+dist: precise
 cache: packages
-
-branches:
-  only:
-    - master
 
 addons:
   apt:
-    sources:
-    - sourceline: 'ppa:texlive-backports/ppa'
     packages:
-    - texlive-lang-cjk，
+    - texlive-lang-japanese，
     - texlive-luatex
 
 before_script:
