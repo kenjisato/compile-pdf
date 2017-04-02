@@ -8,6 +8,7 @@ addons:
   apt:
     packages:
     - texlive-full
-
+before_script:
+  - tlmgr install luatexja
 script:
   - lualatex test.tex
