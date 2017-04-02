@@ -9,10 +9,10 @@ branches:
 
 addons:
   apt:
+    sources:
+    - sourceline: 'ppa:texlive-backports/ppa'
     packages:
-    - fonts-ipaexfont
     - texlive-lang-cjk，
-    - texlive-xetex
     - texlive-luatex
 
 before_script:
