@@ -1,14 +1,14 @@
 language: r
 pandoc_version: 1.17.2
-dist: precise
+dist: trusty
+sudo: false
 cache: packages
 
 addons:
   apt:
-    source:
-    - texlive-lang-japanese
     packages:
     - texlive-luatex
+    - texlive-xetex
 
 before_script:
   - tlmgr install luatexja
