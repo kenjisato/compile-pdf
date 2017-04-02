@@ -7,10 +7,7 @@ cache: packages
 addons:
   apt:
     packages:
-    - texlive-luatex
-    - texlive-xetex
+    - texlive-full
 
-before_script:
-  - tlmgr install luatexja
 script:
   - lualatex test.tex
